@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ip.png">
+</head>
+<body>
+    <center>
+        <div class="container">
+            <div class="half-1">
+                <h1>IP Address Tracker</h1>
+                <input type="search" id="inputField" placeholder="Search for any IP address or domain name">
+                <button onclick="fetchInfo()">></button>
+            </div>
+            <div class="detail-box">
+                <div class="box-1">
+                    <h5>IP ADDRESS</h5>
+                    <h1 id="ipAddress"></h1>
+                </div>
+                <div class="box-1">
+                    <h5>LOCATION</h5>
+                    <h1 id="location"></h1>
+                </div>
+                <div class="box-1">
+                    <h5>TIME ZONE</h5>
+                    <h1 id="timezone"></h1>
+                </div>
+                <div class="box-1" style="border: none;">
+                    <h5>ISP</h5>
+                    <h1 id="isp"></h1>
+                </div>
+            </div>
+            <div class="bg-image"></div>
+        </div>
+    </center>
+<script src="logic.js"></script>
+    
+</body>
+</html>

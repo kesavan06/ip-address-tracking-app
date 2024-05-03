@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: "rubik";
+    src: url("Rubik-VariableFont_wght.ttf");
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "rubik";
+    font-weight:400, 500, 700;
+}
+.half-1{
+    background-image: url("pattern-bg-desktop.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 1536px;
+    height: 300px;
+    position: relative;
+}
+.half-1 h1{
+    padding-top: 20px;
+    color: white;
+    
+}
+.half-1 input{
+    width: 500px;
+    height: 45px;
+    border-radius: 15px 0px 0px 15px;
+    border-style: solid;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-color: black;
+    font-family: "rubik";
+}
+.half-1 button{
+    width: 50px;
+    height: 45px;
+    position: relative;
+    left: -5px;
+    top: 0.5px;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: hsl(0, 0%, 17%);
+    color: white;
+    background-color: hsl(0, 0%, 17%);
+}
+.half-1 button:hover{
+    cursor: pointer;
+}
+.detail-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    width: 1000px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    left: 250px;
+    top: 220px;
+
+}
+.detail-box .box-1{
+    padding-right: 100px;
+    padding-left: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-color: hsl(0, 0%, 8%);
+}
+.detail-box .box-1 h5{
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.detail-box .box-1 h1{
+    font-size: 18px;
+}
+.bg-image{
+    background-image: url('Large_World_Map_bright.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 413px;
+    
+}
+@media only screen and (max-width:400px){
+    .half-1{
+        background-image: url('pattern-bg-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 300px;
+        position: relative;
+    }
+    .half-1 h1{
+        font-size: 19px;
+        padding-top: 10px;
+    }
+    .half-1 input{
+        width: 300px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .detail-box{
+        padding-top: 20px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border-color: white;
+        border-radius: 20px;
+        border-style: solid;
+        width: 350px;
+        height: 350px;
+        background-color: white;
+        position: absolute;
+        top: 120px;
+        left: 10px;
+    
+    }
+    .detail-box .box-1{
+        margin-left: 50px;
+        margin-bottom: 20px;
+        border: none;
+       
+    }
+    
+}
